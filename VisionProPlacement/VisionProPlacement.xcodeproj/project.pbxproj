@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		162A43002B9D007500ED9707 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 162A42FF2B9D007500ED9707 /* RealityKitContent */; };
 		162A43022B9D007500ED9707 /* VisionProPlacementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A43012B9D007500ED9707 /* VisionProPlacementApp.swift */; };
 		162A43042B9D007500ED9707 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A43032B9D007500ED9707 /* ContentView.swift */; };
 		162A43062B9D007500ED9707 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A43052B9D007500ED9707 /* ImmersiveView.swift */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		162A42FA2B9D007500ED9707 /* VisionProPlacement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionProPlacement.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		162A42FE2B9D007500ED9707 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		162A43012B9D007500ED9707 /* VisionProPlacementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionProPlacementApp.swift; sourceTree = "<group>"; };
 		162A43032B9D007500ED9707 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		162A43052B9D007500ED9707 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
@@ -33,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162A43002B9D007500ED9707 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +71,6 @@
 		162A42FD2B9D007500ED9707 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				162A42FE2B9D007500ED9707 /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -104,7 +100,6 @@
 			);
 			name = VisionProPlacement;
 			packageProductDependencies = (
-				162A42FF2B9D007500ED9707 /* RealityKitContent */,
 			);
 			productName = VisionProPlacement;
 			productReference = 162A42FA2B9D007500ED9707 /* VisionProPlacement.app */;
@@ -363,13 +358,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		162A42FF2B9D007500ED9707 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 162A42F22B9D007500ED9707 /* Project object */;
 }
