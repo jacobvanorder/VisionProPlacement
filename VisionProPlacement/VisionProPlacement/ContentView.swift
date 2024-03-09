@@ -18,13 +18,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("Hello, world!")
-
-            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
-                .font(.title)
-                .frame(width: 360)
-                .padding(24)
-                .glassBackgroundEffect()
+            Model3D(named: "sculpture")
         }
         .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
