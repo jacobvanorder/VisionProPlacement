@@ -20,7 +20,7 @@ struct ContentView: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
-        HStack {
+        HStack(spacing: 40) {
             ForEach(assets, id: \.self.assetName) { asset in
                 AssetCardView(asset: asset)
                     .frame(width: 300, height: 400)

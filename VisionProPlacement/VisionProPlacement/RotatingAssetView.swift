@@ -26,7 +26,8 @@ struct RotatingAssetView: View {
                     .repeatForever(autoreverses: false)
                 model
                     .resizable()
-                    .aspectRatio(asset.boundingBox.frameAspectRatio, contentMode: .fit)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                     .animation(animation) { model in
                         model
                             .rotation3DEffect(.degrees(appear ? -360 : 0), axis: .y)
@@ -53,6 +54,7 @@ struct RotatingAssetView: View {
 }
 
 #Preview {
-    RotatingAssetView(asset: try! Asset.allAssets().first!)
+    RotatingAssetView(asset: try! Asset.allAssets().last!)
         .frame(width: 400.0)
+        .border(.pink)
 }

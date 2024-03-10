@@ -7,5 +7,14 @@
             "height": 0.089,
             "depth": 0.114
         }
+    },
+    {
+        "display_name": "Green Mario",
+        "asset_name": "luigi",
+        "bounding_box": {
+            "width": 0.118,
+            "height": 0.095,
+            "depth": 0.196
+        }
     }
 ]

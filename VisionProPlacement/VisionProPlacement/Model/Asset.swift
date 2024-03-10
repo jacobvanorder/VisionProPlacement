@@ -21,7 +21,7 @@ struct Asset: Decodable {
         let depth: CGFloat
         
         var frameAspectRatio: CGFloat {
-            return width / height
+            return max(width, depth) / height
         }
     }
     
