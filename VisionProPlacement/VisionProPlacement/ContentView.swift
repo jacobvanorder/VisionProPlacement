@@ -9,6 +9,9 @@ import SwiftUI
 import RealityKit
 
 struct ContentView: View {
+    
+    
+    private let assets: [Asset]
 
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
@@ -18,8 +21,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            RotatingModel3D(named: "sculpture")
-                .frame(width: 300)
+            ForEach(assets, id: \.self.assetName) { asset in
+                RotatingAsset(asset: asset)
+                    .frame(width: 300, height: 300)
+                    .padding(50.0)
+                    .glassBackgroundEffect()
+            }
         }
         .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
@@ -39,6 +46,16 @@ struct ContentView: View {
                     immersiveSpaceIsShown = false
                 }
             }
+        }
+    }
+    
+    internal init() {
+        do {
+            let assets = try Asset.allAssets()
+            self.assets = assets
+        } catch {
+            print(error)
+            self.assets = []
         }
     }
 }

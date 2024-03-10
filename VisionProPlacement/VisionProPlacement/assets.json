@@ -1,0 +1,11 @@
+[
+    {
+        "display_name": "Sculpture",
+        "asset_name": "sculpture",
+        "bounding_box": {
+            "width": 0.12,
+            "height": 0.089,
+            "depth": 0.114
+        }
+    }
+]
