@@ -1,5 +1,5 @@
 //
-//  RotatingAsset.swift
+//  RotatingAssetView.swift
 //  VisionProPlacement
 //
 //  Created by Jacob Van Order on 3/10/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 import RealityKit
 
-struct RotatingAsset: View {
+struct RotatingAssetView: View {
 
     @State var appear: Bool = false
     
@@ -53,6 +53,6 @@ struct RotatingAsset: View {
 }
 
 #Preview {
-    RotatingAsset(asset: try! Asset.allAssets().first!)
+    RotatingAssetView(asset: try! Asset.allAssets().first!)
         .frame(width: 400.0)
 }

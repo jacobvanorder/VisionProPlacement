@@ -20,12 +20,10 @@ struct ContentView: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
-        VStack {
+        HStack {
             ForEach(assets, id: \.self.assetName) { asset in
-                RotatingAsset(asset: asset)
-                    .frame(width: 300, height: 300)
-                    .padding(50.0)
-                    .glassBackgroundEffect()
+                AssetCardView(asset: asset)
+                    .frame(width: 300, height: 400)
             }
         }
         .padding()
