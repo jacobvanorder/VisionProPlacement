@@ -12,13 +12,14 @@ struct ContentView: View {
 
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
-
+    
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
         VStack {
-            Model3D(named: "sculpture")
+            RotatingModel3D(named: "sculpture")
+                .frame(width: 300)
         }
         .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
