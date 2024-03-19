@@ -27,6 +27,10 @@ struct AssetCardView: View {
 }
 
 #Preview {
-    AssetCardView(asset: try! Asset.allAssets().first!)
-        .frame(width: 300, height: 400)
+    HStack {
+        ForEach(try! Asset.allAssets(), id: \.self.assetName) { asset in
+            AssetCardView(asset: asset)
+                .frame(width: 300, height: 400)
+        }
+    }
 }

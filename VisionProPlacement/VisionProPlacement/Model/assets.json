@@ -9,6 +9,15 @@
         }
     },
     {
+        "display_name": "Analogue Pocket",
+        "asset_name": "analogue_pocket",
+        "bounding_box": {
+            "width": 0.119,
+            "height": 0.165,
+            "depth": 0.089
+        }
+    },
+    {
         "display_name": "Green Mario",
         "asset_name": "luigi",
         "bounding_box": {

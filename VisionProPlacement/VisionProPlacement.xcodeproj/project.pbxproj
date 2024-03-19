@@ -19,6 +19,7 @@
 		16D022B52B9E521F00C4E77C /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D022B42B9E521F00C4E77C /* Asset.swift */; };
 		16D022B82B9E59F200C4E77C /* AssetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D022B72B9E59F200C4E77C /* AssetCardView.swift */; };
 		16D022BA2B9E5B7200C4E77C /* luigi.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 16D022B92B9E5B7200C4E77C /* luigi.usdz */; };
+		16D022BE2BA60DAC00C4E77C /* analogue_pocket.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 16D022BD2BA60DAC00C4E77C /* analogue_pocket.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		16D022B42B9E521F00C4E77C /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		16D022B72B9E59F200C4E77C /* AssetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardView.swift; sourceTree = "<group>"; };
 		16D022B92B9E5B7200C4E77C /* luigi.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = luigi.usdz; sourceTree = "<group>"; };
+		16D022BD2BA60DAC00C4E77C /* analogue_pocket.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = analogue_pocket.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				16D022B92B9E5B7200C4E77C /* luigi.usdz */,
 				162A43152B9D10ED00ED9707 /* sculpture.usdz */,
+				16D022BD2BA60DAC00C4E77C /* analogue_pocket.usdz */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162A430A2B9D007600ED9707 /* Assets.xcassets in Resources */,
+				16D022BE2BA60DAC00C4E77C /* analogue_pocket.usdz in Resources */,
 				162A430D2B9D007600ED9707 /* Preview Assets.xcassets in Resources */,
 				16D022BA2B9E5B7200C4E77C /* luigi.usdz in Resources */,
 				162A43082B9D007500ED9707 /* ImageBasedLighting.skybox in Resources */,
