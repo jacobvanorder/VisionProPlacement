@@ -13,6 +13,7 @@ struct AssetCardView: View {
     var body: some View {
         VStack(spacing: 30) {
             RotatingAssetView(asset: asset)
+                .frame(width: 200, height: 200)
                 .padding(20.0)
                 .background {
                     RoundedRectangle(cornerRadius: 25.0)

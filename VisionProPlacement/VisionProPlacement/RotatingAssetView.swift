@@ -9,8 +9,6 @@ import SwiftUI
 import RealityKit
 
 struct RotatingAssetView: View {
-
-    @State var appear: Bool = false
     
     let duration: TimeInterval
     let speed: Double
@@ -27,12 +25,14 @@ struct RotatingAssetView: View {
                 model
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
-                    .animation(animation) { model in
+                    .frame(width: geometry.size.width,
+                           height: geometry.size.height,
+                           alignment: .center)
+                    .phaseAnimator([true, false]) { model, phase in
                         model
-                            .rotation3DEffect(.degrees(appear ? -360 : 0), axis: .y)
-                            .onAppear {
-                                appear = true
+                            .animation(animation) { model in
+                                model
+                                    .rotation3DEffect(.degrees(phase ? 0 : 360), axis: .y)
                             }
                     }
             } placeholder: {
@@ -42,11 +42,9 @@ struct RotatingAssetView: View {
         .aspectRatio(asset.boundingBox.frameAspectRatio, contentMode: .fit)
     }
     
-    internal init(appear: Bool = false,
-                  duration: TimeInterval = 10.0,
+    internal init(duration: TimeInterval = 10.0,
                   speed: Double = 1.3,
                   asset: Asset) {
-        self.appear = appear
         self.duration = duration
         self.speed = speed
         self.asset = asset
