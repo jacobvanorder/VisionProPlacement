@@ -12,13 +12,15 @@ struct AssetCardView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            RotatingAssetView(asset: asset)
-                .frame(width: 200, height: 200)
-                .padding(20.0)
-                .background {
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .foregroundStyle(Color.white.opacity(0.2))
-                }
+            RotatingModel3D(named: asset.assetName) {
+                ProgressView()
+            }
+            .frame(width: 200, height: 200)
+            .padding(20)
+            .background {
+                RoundedRectangle(cornerRadius: 25.0)
+                    .foregroundStyle(.tertiary)
+            }
             Text(asset.displayName)
                 .font(.title)
         }
@@ -28,7 +30,7 @@ struct AssetCardView: View {
 }
 
 #Preview {
-    HStack {
+    HStack(spacing: 20) {
         ForEach(try! Asset.allAssets(), id: \.self.assetName) { asset in
             AssetCardView(asset: asset)
                 .frame(width: 300, height: 400)
